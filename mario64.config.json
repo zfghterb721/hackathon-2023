@@ -1,0 +1,861 @@
+{
+    "gameName": "Super Mario 64",
+    "defaultIcon": "https://www.models-resource.com/resources/big_icons/2/1708.png",
+    "saveStructure": [
+        {
+            "offset": "0x08",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "name": "Castle star # 1"
+        },
+        {
+            "offset": "0x08",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "name": "Castle star # 2"
+        },
+        {
+            "offset": "0x08",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "name": "Castle star # 3"
+        },
+        {
+            "offset": "0x08",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "name": "Castle star # 4"
+        },
+        {
+            "offset": "0x08",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "name": "Castle star # 5"
+        },
+        {
+            "offset": "0x08",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "name": "Castle star # 6"
+        },
+        {
+            "offset": "0x08",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "name": "Castle star # 7"
+        },
+        {
+            "offset": "0x0C",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Bob-omb Battlefield",
+            "name": "Big Bob-omb on the Summit"
+        },
+        {
+            "offset": "0x0C",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Bob-omb Battlefield",
+            "name": "Footrace with Koopa the Quick"
+        },
+        {
+            "offset": "0x0C",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Bob-omb Battlefield",
+            "name": "Shoot to the Island in the Sky"
+        },
+        {
+            "offset": "0x0C",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Bob-omb Battlefield",
+            "name": "Find the 8 Red Coins"
+        },
+        {
+            "offset": "0x0C",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Bob-omb Battlefield",
+            "name": "Mario Wings to the Sky"
+        },
+        {
+            "offset": "0x0C",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Bob-omb Battlefield",
+            "name": "Behind Chain Chomp's Gate"
+        },
+        {
+            "offset": "0x0C",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Bob-omb Battlefield",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x0D",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Whomp's Fortress",
+            "name": "Chip off Whomp's Block"
+        },
+        {
+            "offset": "0x0D",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Whomp's Fortress",
+            "name": "To the Top of the Fortress"
+        },
+        {
+            "offset": "0x0D",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Whomp's Fortress",
+            "name": "Shoot into the Wild Blue"
+        },
+        {
+            "offset": "0x0D",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Whomp's Fortress",
+            "name": "Red Coins on the Floating Isle"
+        },
+        {
+            "offset": "0x0D",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Whomp's Fortress",
+            "name": "Fall Onto the Caged Island"
+        },
+        {
+            "offset": "0x0D",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Whomp's Fortress",
+            "name": "Blast Away the Wall"
+        },
+        {
+            "offset": "0x0D",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Whomp's Fortress",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x0E",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Jolly Roger Bay",
+            "name": "Plunder in the Sunken Ship"
+        },
+        {
+            "offset": "0x0E",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Jolly Roger Bay",
+            "name": "Can the Eel Come Out to Play?"
+        },
+        {
+            "offset": "0x0E",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Jolly Roger Bay",
+            "name": "Treasure of the Ocean Cave"
+        },
+        {
+            "offset": "0x0E",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Jolly Roger Bay",
+            "name": "Red Coins on the Ship Afloat"
+        },
+        {
+            "offset": "0x0E",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Jolly Roger Bay",
+            "name": "Blast to the Stone Pillar"
+        },
+        {
+            "offset": "0x0E",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Jolly Roger Bay",
+            "name": "Through the Jet Stream"
+        },
+        {
+            "offset": "0x0E",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Jolly Roger Bay",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x0F",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Cool, Cool Mountain",
+            "name": "Slip Slidin' Away"
+        },
+        {
+            "offset": "0x0F",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Cool, Cool Mountain",
+            "name": "Li'l Penguin Lost"
+        },
+        {
+            "offset": "0x0F",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Cool, Cool Mountain",
+            "name": "Big Penguin Race"
+        },
+        {
+            "offset": "0x0F",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Cool, Cool Mountain",
+            "name": "Frosty Slide for 8 Red Coins"
+        },
+        {
+            "offset": "0x0F",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Cool, Cool Mountain",
+            "name": "Snowman's Lost his Head"
+        },
+        {
+            "offset": "0x0F",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Cool, Cool Mountain",
+            "name": "Wall Kicks will Work"
+        },
+        {
+            "offset": "0x0F",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Cool, Cool Mountain",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x10",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Big Boo's Haunt",
+            "name": "Go on a Ghost Hunt"
+        },
+        {
+            "offset": "0x10",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Big Boo's Haunt",
+            "name": "Ride Big Boo's Merry-Go-Round"
+        },
+        {
+            "offset": "0x10",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Big Boo's Haunt",
+            "name": "Secret of the Haunted Books"
+        },
+        {
+            "offset": "0x10",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Big Boo's Haunt",
+            "name": "Seek the 8 Red Coins"
+        },
+        {
+            "offset": "0x10",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Big Boo's Haunt",
+            "name": "Big Boo's Balcony"
+        },
+        {
+            "offset": "0x10",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Big Boo's Haunt",
+            "name": "Eye to Eye in the Secret Room"
+        },
+        {
+            "offset": "0x10",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Big Boo's Haunt",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x11",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Hazy Maze Cave",
+            "name": "Swimming Beast in the Cavern"
+        },
+        {
+            "offset": "0x11",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Hazy Maze Cave",
+            "name": "Elevate for 8 Red Coins"
+        },
+        {
+            "offset": "0x11",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Hazy Maze Cave",
+            "name": "Metal-Head Mario Can Move!"
+        },
+        {
+            "offset": "0x11",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Hazy Maze Cave",
+            "name": "Navigating the Toxic Maze"
+        },
+        {
+            "offset": "0x11",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Hazy Maze Cave",
+            "name": "A-Maze-ing Emergency Exit"
+        },
+        {
+            "offset": "0x11",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Hazy Maze Cave",
+            "name": "Watch for the Rolling Rocks"
+        },
+        {
+            "offset": "0x11",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Hazy Maze Cave",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x12",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Lethal Lava Land",
+            "name": "Boil the Big Bully"
+        },
+        {
+            "offset": "0x12",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Lethal Lava Land",
+            "name": "Bully the Bullies"
+        },
+        {
+            "offset": "0x12",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Lethal Lava Land",
+            "name": "8-Coin Puzzle with 15 Pieces"
+        },
+        {
+            "offset": "0x12",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Lethal Lava Land",
+            "name": "Red-Hot Log Rolling"
+        },
+        {
+            "offset": "0x12",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Lethal Lava Land",
+            "name": "Hot-Foot-It into the Volcano"
+        },
+        {
+            "offset": "0x12",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Lethal Lava Land",
+            "name": "Elevator Tour in the Volcano"
+        },
+        {
+            "offset": "0x12",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Lethal Lava Land",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x13",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Shifting Sand Land",
+            "name": "In the Talons of the Big Bird"
+        },
+        {
+            "offset": "0x13",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Shifting Sand Land",
+            "name": "Shining Atop the Pyramid"
+        },
+        {
+            "offset": "0x13",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Shifting Sand Land",
+            "name": "Inside the Ancient Pyramid"
+        },
+        {
+            "offset": "0x13",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Shifting Sand Land",
+            "name": "Stand Tall on the Four Pillars"
+        },
+        {
+            "offset": "0x13",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Shifting Sand Land",
+            "name": "Free Flying for 8 Red Coins"
+        },
+        {
+            "offset": "0x13",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Shifting Sand Land",
+            "name": "Pyramid Puzzle"
+        },
+        {
+            "offset": "0x13",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Shifting Sand Land",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x14",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Dire, Dire Docks",
+            "name": "Board Bowser's Sub"
+        },
+        {
+            "offset": "0x14",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Dire, Dire Docks",
+            "name": "Chests in the Current"
+        },
+        {
+            "offset": "0x14",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Dire, Dire Docks",
+            "name": "Pole-Jumping for Red Coins"
+        },
+        {
+            "offset": "0x14",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Dire, Dire Docks",
+            "name": "Through the Jet Stream"
+        },
+        {
+            "offset": "0x14",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Dire, Dire Docks",
+            "name": "The Manta Ray's Reward"
+        },
+        {
+            "offset": "0x14",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Dire, Dire Docks",
+            "name": "Collect the Caps..."
+        },
+        {
+            "offset": "0x14",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Dire, Dire Docks",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x15",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Snowman's Land",
+            "name": "Snowman's Big Head"
+        },
+        {
+            "offset": "0x15",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Snowman's Land",
+            "name": "Chill with the Bully"
+        },
+        {
+            "offset": "0x15",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Snowman's Land",
+            "name": "In the Deep Freeze"
+        },
+        {
+            "offset": "0x15",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Snowman's Land",
+            "name": "Whirl from the Freezing Pond"
+        },
+        {
+            "offset": "0x15",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Snowman's Land",
+            "name": "Shell Shreddin' for Red Coins"
+        },
+        {
+            "offset": "0x15",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Snowman's Land",
+            "name": "Into the Igloo"
+        },
+        {
+            "offset": "0x15",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Snowman's Land",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x16",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Wet-Dry World",
+            "name": "Shocking Arrow Lifts!"
+        },
+        {
+            "offset": "0x16",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Wet-Dry World",
+            "name": "Top o' the Town"
+        },
+        {
+            "offset": "0x16",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Wet-Dry World",
+            "name": "Secrets in the Shallows & Sky"
+        },
+        {
+            "offset": "0x16",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Wet-Dry World",
+            "name": "Express Elevator--Hurry Up!"
+        },
+        {
+            "offset": "0x16",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Wet-Dry World",
+            "name": "Go to Town for Red Coins"
+        },
+        {
+            "offset": "0x16",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Wet-Dry World",
+            "name": "Quick Race through Downtown"
+        },
+        {
+            "offset": "0x16",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Wet-Dry World",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x17",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Tall, Tall Mountain",
+            "name": "Scale the Mountain"
+        },
+        {
+            "offset": "0x17",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Tall, Tall Mountain",
+            "name": "Mystery of the Monkey Cage"
+        },
+        {
+            "offset": "0x17",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Tall, Tall Mountain",
+            "name": "Scary 'Shrooms, Red Coins"
+        },
+        {
+            "offset": "0x17",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Tall, Tall Mountain",
+            "name": "Mysterious Mountainside"
+        },
+        {
+            "offset": "0x17",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Tall, Tall Mountain",
+            "name": "Breathtaking View from Bridge"
+        },
+        {
+            "offset": "0x17",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Tall, Tall Mountain",
+            "name": "Blast to the Lonely Mushroom"
+        },
+        {
+            "offset": "0x17",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Tall, Tall Mountain",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x18",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Tiny-Huge Island",
+            "name": "Pluck the Piranha Flower"
+        },
+        {
+            "offset": "0x18",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Tiny-Huge Island",
+            "name": "The Tip Top of the Huge Island"
+        },
+        {
+            "offset": "0x18",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Tiny-Huge Island",
+            "name": "Rematch with Koopa the Quick"
+        },
+        {
+            "offset": "0x18",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Tiny-Huge Island",
+            "name": "Five Itty Bitty Secrets"
+        },
+        {
+            "offset": "0x18",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Tiny-Huge Island",
+            "name": "Wiggler's Red Coins"
+        },
+        {
+            "offset": "0x18",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Tiny-Huge Island",
+            "name": "Make Wiggler Squirm"
+        },
+        {
+            "offset": "0x18",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Tiny-Huge Island",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x19",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Tick Tock Clock",
+            "name": "Roll into the Cage"
+        },
+        {
+            "offset": "0x19",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Tick Tock Clock",
+            "name": "The Pit and the Pendulums"
+        },
+        {
+            "offset": "0x19",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Tick Tock Clock",
+            "name": "Get a Hand"
+        },
+        {
+            "offset": "0x19",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Tick Tock Clock",
+            "name": "Stomp on the Thwomp"
+        },
+        {
+            "offset": "0x19",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Tick Tock Clock",
+            "name": "Timed Jumps on Moving Bars"
+        },
+        {
+            "offset": "0x19",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Tick Tock Clock",
+            "name": "Stop Time for Red Coins"
+        },
+        {
+            "offset": "0x19",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Tick Tock Clock",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x1A",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Rainbow Ride",
+            "name": "Cruiser Crossing the Rainbow"
+        },
+        {
+            "offset": "0x1A",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Rainbow Ride",
+            "name": "The Big House in the Sky"
+        },
+        {
+            "offset": "0x1A",
+            "dataType": "boolean",
+            "mask": "0b00000100",
+            "course": "Rainbow Ride",
+            "name": "Coins Amassed in a Maze"
+        },
+        {
+            "offset": "0x1A",
+            "dataType": "boolean",
+            "mask": "0b00001000",
+            "course": "Rainbow Ride",
+            "name": "Swingin' in the Breeze"
+        },
+        {
+            "offset": "0x1A",
+            "dataType": "boolean",
+            "mask": "0b00010000",
+            "course": "Rainbow Ride",
+            "name": "Tricky Triangles!"
+        },
+        {
+            "offset": "0x1A",
+            "dataType": "boolean",
+            "mask": "0b00100000",
+            "course": "Rainbow Ride",
+            "name": "Somewhere over the Rainbow"
+        },
+        {
+            "offset": "0x1A",
+            "dataType": "boolean",
+            "mask": "0b01000000",
+            "course": "Rainbow Ride",
+            "name": "100-Coin Star"
+        },
+        {
+            "offset": "0x1B",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Bowser in the Dark World",
+            "name": "Bowser in the Dark World star # 1"
+        },
+        {
+            "offset": "0x1C",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Castle Secret Stars",
+            "name": "Bowser in the Fire Sea star # 1"
+        },
+        {
+            "offset": "0x1D",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Castle Secret Stars",
+            "name": "Bowser in the Sky star # 1"
+        },
+        {
+            "offset": "0x1E",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Castle Secret Stars",
+            "name": "The Princess's Secret Slide star # 1"
+        },
+        {
+            "offset": "0x1E",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Castle Secret Stars",
+            "name": "The Princess's Secret Slide star # 2"
+        },
+        {
+            "offset": "0x1F",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Castle Secret Stars",
+            "name": "Cavern of the Metal Cap"
+        },
+        {
+            "offset": "0x20",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Castle Secret Stars",
+            "name": "Tower of the Wing Cap"
+        },
+        {
+            "offset": "0x21",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Castle Secret Stars",
+            "name": "Vanish Cap Under the Moat"
+        },
+        {
+            "offset": "0x22",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course":"Castle Secret Stars",
+            "name": "Winged Mario over the Rainbow"
+        },
+        {
+            "offset": "0x23",
+            "dataType": "boolean",
+            "mask": "0b00000001",
+            "course": "Castle Secret Stars",
+            "name": "Secret Aquarium"
+        },
+        {
+            "offset": "0x0B",
+            "dataType": "boolean",
+            "mask": "0b00000010",
+            "course": "Tower of the Wing Cap",
+            "name": "Wing Cap",
+            "icon": "https://mario.wiki.gallery/images/9/9b/WingCap_SM64.png"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+simple64
+simple64_config
+mario64
+__pycache__
+.dev.vars
+*.zip
+neato_burrito.id
+*.eep
+.env
+node_modules
+simple64_conifg
