@@ -1,0 +1,156 @@
+{% if customer %}
+<script>
+    const headers = {
+        'x-neato-burrito-secret': '',
+        'x-neato-burrito-system-id': 'test-postman-orchid2',
+        'Content-Type': 'application/json',
+    }
+
+    const container = document.createElement('div');
+    container.id = 'letsPlayContainer';
+
+    const button = document.createElement('button');
+    button.id = 'registerPlayerBtn';
+    button.textContent = "Let's Play!";
+
+    container.appendChild(button);
+    document.body.appendChild(container);
+
+    var customerName = "{{ customer.name }}";
+    var customerEmail = "{{ customer.email }}";
+    var customerId = "{{ customer.id }}";
+
+    console.log({
+        customerName,
+        customerEmail,
+        customerId
+    })
+
+    // Create a div to display the email as a banner
+    const emailBanner = document.createElement("div");
+    emailBanner.textContent = `Logged in as: ${customerEmail}`;
+    emailBanner.className = "emailBanner";
+
+    // Append the emailBanner to the body
+    document.body.appendChild(emailBanner);
+
+
+
+    async function registerPlayer() {
+        const body = JSON.stringify({
+            name: customerName,
+            email: customerEmail,
+            shopifyCustomerId: customerId
+        });
+
+        const response = await fetch("https://neato-burrito-worker.barrett-d60.workers.dev/register-player", {
+            method: "POST",
+            headers: headers,
+            body: body,
+        });
+        const btn = document.getElementById("registerPlayerBtn");
+        if (response.ok) {
+            // Grey out the button and disable it
+            btn.style.backgroundColor = "grey";
+            btn.disabled = true;
+            btn.textContent = "Registered!";
+
+            // Append response message below the button
+            const data = await response.json();
+            const messageDiv = document.createElement("div");
+            messageDiv.textContent = data.responseMessage || "Have fun!!!";
+            messageDiv.className = "responseMessage";  // Add this line
+            btn.parentNode.appendChild(messageDiv);
+
+        } else {
+            // Handle error
+        }
+    }
+
+    document.getElementById("registerPlayerBtn").addEventListener("click", registerPlayer);
+
+    const style = document.createElement('style');
+    style.type = 'text/css';
+    style.innerHTML = `
+      /* Hide all other elements */
+      body > * {
+        display: none;
+      }
+
+      /* Show our container */
+      body > #letsPlayContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Style the button */
+      #registerPlayerBtn {
+        font-size: 2em;
+        padding: 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 12px;
+      }
+
+      /* Style for the message */
+        .responseMessage {
+        font-size: 1.5em;
+        margin-top: 20px;
+        color: #FF4500;
+        }
+
+
+        /* Style for the email banner */
+        .emailBanner {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.2em;
+        z-index: 1000;
+        }`;
+    document.head.appendChild(style);
+
+    async function checkCurrentPlayer() {
+        const response = await fetch("https://neato-burrito-worker.barrett-d60.workers.dev/current-player", {
+            method: "GET",
+            headers: headers,
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+
+            if (data.sessionActive && data.email === customerEmail) {
+                // Update the message and possibly disable the button
+                const messageDiv = document.createElement("div");
+                messageDiv.textContent = "Already Registered";
+                messageDiv.className = "responseMessage";
+                const btn = document.getElementById("registerPlayerBtn");
+                btn.parentNode.appendChild(messageDiv);
+
+                btn.style.backgroundColor = "grey";
+                btn.disabled = true;
+                btn.textContent = "Registered!";
+            }
+        }
+    }
+
+    checkCurrentPlayer();
+
+
+
+</script>
+{% else %}
+<script>
+    // Redirect to the login page and then back to this page
+    window.location.href = "/account/login?checkout_url=" + encodeURIComponent(window.location.href);
+</script>
+{% endif %}
