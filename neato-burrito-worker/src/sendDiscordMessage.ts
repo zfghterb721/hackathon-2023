@@ -1,4 +1,4 @@
-import { Env } from './index'
+import { Env } from './types';
 export const sendDiscordMessage = async (contents: any, env: Env) => {
     const webhookURL = env.DISCORD_HOOK;
     const data = await fetch(webhookURL, {
