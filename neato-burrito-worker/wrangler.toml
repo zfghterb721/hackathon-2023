@@ -38,12 +38,13 @@ compatibility_date = "2023-09-22"
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.
 # Durable Objects can live for as long as needed. Use these when you need a long-running "server", such as in realtime apps.
 # Docs: https://developers.cloudflare.com/workers/runtime-apis/durable-objects
-# [[durable_objects.bindings]]
-# name = "MY_DURABLE_OBJECT"
-# class_name = "MyDurableObject"
+[durable_objects]
+bindings = [
+  { name = "PLAYER_STATE", class_name = "PlayerState" }
+]
 
 # Durable Object migrations.
 # Docs: https://developers.cloudflare.com/workers/learning/using-durable-objects#configure-durable-object-classes-with-migrations
-# [[migrations]]
-# tag = "v1"
-# new_classes = ["MyDurableObject"]
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["PlayerState"]

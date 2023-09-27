@@ -9,3 +9,6 @@ neato_burrito.id
 .env
 node_modules
 simple64_conifg
+mupen
+mupen64plus
+.wrangler
